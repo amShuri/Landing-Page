@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap");
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+strong {
+  color: hsl(22, 79%, 58%);
+}
+
+button {
+  background-color: hsl(22, 79%, 54%);
+  border-radius: 8px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 13px 22px;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #141c27;
+  color: #fff;
+  height: 60px;
+}
+
+.header .container {
+  height: 100%;
+  justify-content: space-between;
+}
+
+.header__logo {
+  color: #f9faf8;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.header__list {
+  display: flex;
+}
+
+.header__link {
+  color: #e5e7eb;
+  font-size: 18px;
+  margin-right: 20px;
+}
+
+.header__link:hover {
+  filter: brightness(80%);
+}
+
+.hero {
+  background-color: #1f2937;
+  line-height: 1.2;
+  padding: 0 30px;
+}
+
+.hero .container {
+  min-height: 80vh;
+  gap: 1rem;
+}
+
+.hero__title {
+  color: #f9faf8;
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+.hero__paragraph {
+  color: #e5e7eb;
+  font-size: 18px;
+  margin: 15px 0;
+}
+
+.hero__button--dark {
+  background-color: rgb(0, 0, 0);
+}
+
+.hero__button:hover {
+  filter: brightness(90%);
+}
+
+.hero__img {
+  border-radius: 12px;
+  max-width: 600px;
+}
+
+.hero__box,
+.information__box {
+  flex: 1;
+}
+
+.information {
+  background-color: #fff;
+  padding: 0.8em 0 3rem;
+}
+
+.information .container {
+  max-width: 820px;
+  gap: 1.5rem;
+  padding: 0 1.5rem;
+}
+
+.information__title {
+  color: #1f2937;
+  font-size: 36px;
+  font-weight: bolder;
+  margin: 1.8rem;
+  text-align: center;
+}
+
+.information__placeholder {
+  background-color: #fff;
+  border-radius: 10px;
+  border: 2px solid papayawhip;
+  height: 160px;
+}
+
+.information__paragraph {
+  font-size: 16px;
+  margin: 0.5rem 0;
+  text-align: center;
+  line-height: 1.45;
+}
+
+.quote {
+  background-color: #e5e7eb;
+  color: #1f2937;
+  font-size: 29px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1.3;
+}
+
+.quote__signature {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.quote .container {
+  max-width: 780px;
+  min-height: 70vh;
+  padding: 0 1.5rem;
+}
+
+.cta {
+  color: #000;
+  margin: 4rem;
+}
+
+.cta .container {
+  background-image: url(images/halloween-bg.jpg);
+  background-position: 0% 33%;
+  background-size: cover;
+  border-radius: 10px;
+  justify-content: space-between;
+  max-width: 1000px;
+  min-height: 30vh;
+  padding: 0 5rem;
+  border: 2px solid orange;
+}
+
+.cta__title {
+  font-size: 24px;
+}
+
+.cta__box {
+  flex: 1;
+  padding: 1em 0;
+}
+
+.cta__paragraph {
+  color: #292929;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.cta__button {
+  border: 1px solid rgba(0, 0, 0, 0.85);
+  border-radius: 10px;
+}
+
+.cta__button:hover {
+  filter: brightness(90%);
+}
+
+.footer {
+  background-color: #141c27;
+  color: #e5e7eb;
+  font-size: 16px;
+  font-weight: 300;
+  min-height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pixabay-credits {
+  margin-top: 5px;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+}
+
+.pixabay-credits a:link,
+.pixabay-credits a:visited {
+  color: rgb(223, 148, 9);
+  border-bottom: 1px solid rgb(223, 148, 9);
+}
+
+.pixabay-credits a:hover {
+  filter: brightness(70%);
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.dark {
+  color: #000;
+}

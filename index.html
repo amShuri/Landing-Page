@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE-edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Odin Landing Project</title>
   </head>
@@ -11,11 +18,11 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="header__logo">Header Logo</div>
+        <div class="header__logo">Smiling Pumpkins</div>
         <ul class="header__list">
-          <li><a class="header__link" href="#">Header Link One</a></li>
-          <li><a class="header__link" href="#">Header Link Two</a></li>
-          <li><a class="header__link" href="#">Header Link Three</a></li>
+          <li><a class="header__link" href="#">Home</a></li>
+          <li><a class="header__link" href="#">Catalog</a></li>
+          <li><a class="header__link" href="#">Contact</a></li>
         </ul>
       </div>
     </header>
@@ -23,62 +30,75 @@
     <div class="hero">
       <div class="container">
         <div class="hero__box">
-          <h1 class="hero__title">This website is awesome</h1>
+          <h1 class="hero__title">
+            Get your smiling pumpkin for <strong>FREE</strong>!
+          </h1>
           <p class="hero__paragraph">
-            This website has some subtext that goes here under the main title.
-            It's a smaller font and the color is lower contrast.
+            Can't decide what pumpkin craving you like the most? How about a
+            free smiling one? Get it now!
           </p>
-          <button class="hero__button">Sign up</button>
+
+          <button class="hero__button">
+            <i class="fa-solid fa-gift"></i> Get pumpkin
+          </button>
+
+          <a href="#info">
+            <button class="hero__button hero__button--dark">
+              <i class="fa-regular fa-face-grin-beam-sweat"></i> I want
+              something else
+            </button>
+          </a>
         </div>
         <div class="hero__box">
           <figure>
             <img
               class="hero__img"
-              src="images/halloween_pumpkin.png"
+              src="images/smiling-pumpkin.jpg"
               alt="A halloween pumpkin"
             />
             <figcaption class="pixabay-credits">
-              This image was taken from
+              Image by
               <a
                 class="pixabay-credits"
-                href="https://pixabay.com/illustrations/halloween-jack-o--lanterns-pumpkins-7487706/"
+                href="https://pixabay.com/users/hansuan_fabregas-2902307/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7487706"
                 target="_blank"
-                >Pixabay</a
+                >HANSUAN FABREGAS</a
               >
+              from <a href="https://pixabay.com/" target="_blank">Pixabay</a>
             </figcaption>
           </figure>
         </div>
       </div>
     </div>
 
-    <section class="information">
-      <h2 class="information__title">Some Random Information</h2>
+    <section class="information" id="info">
+      <h2 class="information__title">Say, what about one of these?</h2>
       <div class="container">
         <div class="information__box">
           <div class="information__placeholder"></div>
           <p class="information__paragraph">
-            this is some subtext under an illustration or image
+            The most requested invisible pumpkin of 2022.
           </p>
         </div>
 
         <div class="information__box">
           <div class="information__placeholder"></div>
           <p class="information__paragraph">
-            this is some subtext under an illustration or image
+            Most fashion and stylish pumpkin, as you can see.
           </p>
         </div>
 
         <div class="information__box">
           <div class="information__placeholder"></div>
           <p class="information__paragraph">
-            This is some subtext under an illustration or image
+            This pumpkin is on vacation. They're not coming back.
           </p>
         </div>
 
         <div class="information__box">
           <div class="information__placeholder"></div>
           <p class="information__paragraph">
-            this is some subtext under an illustration or image
+            An old, spooky, grumpy and weird pumpkin.
           </p>
         </div>
       </div>
@@ -87,9 +107,10 @@
     <section class="quote">
       <div class="container">
         <p>
-          This is an inspiring quote, or a testimonial from a customer. Maybe
-          it's just filling up space, or maybe people will actually read it. Who
-          knows? All I know is that it looks nice.
+          I got my free smiling pumpkin, FOR FREE! I even went ahead and said I
+          wanted something else and got a bunch of invisible pumpkins, ALSO FOR
+          FREE!
+          <span class="quote__signature">-No one, ever</span>
         </p>
       </div>
     </section>
@@ -97,12 +118,23 @@
     <section class="cta">
       <div class="container">
         <div class="cta__box">
-          <h2 class="cta__title">Call to action! It's time!</h2>
+          <h2 class="cta__title">Want more smiling pumpkins?</h2>
           <p class="cta__paragraph">
-            Sign up for our product by clicking that button right over there!
+            Join the waiting list and receive free pumpkins every year!
           </p>
         </div>
-        <button class="cta__button">Sign up</button>
+        <button class="cta__button">Join list</button>
+      </div>
+      <div class="flex-center">
+        <span class="pixabay-credits dark"
+          >Image by
+          <a
+            href="https://pixabay.com/users/missartem-18161995/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7471880"
+            target="_blank"
+            >missartem</a
+          >
+          from <a href="https://pixabay.com/" target="_blank">Pixabay</a></span
+        >
       </div>
     </section>
 
