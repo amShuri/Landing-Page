@@ -28,10 +28,6 @@ ul {
   list-style: none;
 }
 
-strong {
-  color: hsl(22, 79%, 58%);
-}
-
 button {
   background-color: hsl(22, 79%, 54%);
   border-radius: 8px;
@@ -50,6 +46,7 @@ button {
   margin: 0 auto;
 }
 
+/* Start of Header section */
 .header {
   background-color: #141c27;
   color: #fff;
@@ -81,7 +78,9 @@ button {
 .header__link:hover {
   filter: brightness(80%);
 }
+/* End of Header section */
 
+/* Start of Hero section */
 .hero {
   background-color: #1f2937;
   line-height: 1.2;
@@ -89,7 +88,7 @@ button {
 }
 
 .hero .container {
-  min-height: 80vh;
+  min-height: 95vh;
   gap: 1rem;
 }
 
@@ -105,13 +104,9 @@ button {
   margin: 15px 0;
 }
 
-.hero__button:nth-of-type(1) {
+.hero__button {
   margin-right: 0.5em;
   margin-bottom: 0.5em;
-}
-
-.hero__button--dark {
-  background-color: rgb(0, 0, 0);
 }
 
 .hero__button:hover {
@@ -126,7 +121,9 @@ button {
 .hero__box {
   flex: 1;
 }
+/* End of Hero section */
 
+/* Start of Information section */
 .information {
   background-color: #fff;
   padding: 0.8em 0 3rem;
@@ -151,19 +148,16 @@ button {
   flex-basis: 160px;
 }
 
-.information__placeholder {
+.information__img {
   background-color: #fff;
   border-radius: 10px;
-  border: 2px solid #d8b988;
-  height: 160px;
+  border: 2px solid #fdc161;
+  height: auto;
+  width: 100%;
 }
+/* End of Information section */
 
-.information__paragraph {
-  font-size: 16px;
-
-  text-align: center;
-}
-
+/* Start of Quote section */
 .quote {
   background-color: #e5e7eb;
   color: #1f2937;
@@ -186,9 +180,12 @@ button {
   min-height: 70vh;
   padding: 0 1.5rem;
 }
+/* End of Quote section */
 
+/* Start of Call To Action section */
 .cta {
-  margin: 4rem 0;
+  padding: 4rem 0;
+  background-color: #fff;
 }
 
 .cta .container {
@@ -221,6 +218,7 @@ button {
 .cta__button:hover {
   filter: brightness(90%);
 }
+/* End of Call To Action section */
 
 .footer {
   background-color: #141c27;
@@ -233,6 +231,64 @@ button {
   justify-content: center;
 }
 
+/* Start of Hero FREE text's animation */
+@keyframes freeText {
+  0% {
+    color: rgb(255, 184, 117);
+  }
+  25% {
+    color: rgb(223, 87, 9);
+  }
+  100% {
+    color: rgba(255, 177, 113, 0.897);
+  }
+  50% {
+    color: rgb(255, 189, 65);
+  }
+}
+
+.hero__free {
+  animation-name: freeText;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+/* End of Hero FREE text's animation */
+
+/* Start of Hero's gift icon */
+@keyframes heroGift {
+  0% {
+    color: rgb(255, 184, 117);
+    transform: scale(90%) rotate(35deg);
+  }
+  25% {
+    color: rgb(223, 87, 9);
+  }
+  50% {
+    color: rgba(255, 177, 113, 0.897);
+    transform: scale(100%) rotate(-35deg);
+  }
+  100% {
+    color: rgb(255, 189, 65);
+    transform: scale(90%) rotate(35deg);
+  }
+}
+
+.hero__gift {
+  animation-name: heroGift;
+  animation-duration: 2s;
+  animation-iteration-count: 5;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: backwards;
+}
+
+.hero__gift {
+  color: rgb(255, 189, 65);
+  transform: scale(90%);
+}
+/* End of Hero's gift icon */
+
+/* Pixabay and Pexels credits plus random components */
 .pixabay-credits {
   margin-top: 5px;
   color: #fff;
@@ -240,13 +296,28 @@ button {
   font-size: 12px;
 }
 
+.pexels-credits {
+  font-size: 16px;
+  text-align: center;
+}
+
 .pixabay-credits a:link,
-.pixabay-credits a:visited {
+.pixabay-credits a:visited,
+.pexels-credits a:link,
+.pexels-credits a:visited {
   color: rgb(223, 148, 9);
   border-bottom: 1px solid rgb(223, 148, 9);
 }
 
-.pixabay-credits a:hover {
+.pexels-credits a:link,
+.pexels-credits a:visited {
+  border: none;
+}
+
+.pixabay-credits a:hover,
+.pixabay-credits a:focus,
+.pexels-credits a:hover,
+.pexels-credits a:focus {
   filter: brightness(70%);
 }
 
@@ -255,10 +326,20 @@ button {
   justify-content: center;
 }
 
-.dark {
-  color: #000;
+.dark-color {
+  color: rgb(15, 15, 15);
 }
 
+.dark-bg {
+  background-color: rgb(15, 15, 15);
+}
+/* End of Credits*/
+
+/* Start of Media Queries for practicing purposes */
+
+/* This is not the best way to make media queries
+I've done these really quickly just for practicing
+flexbox's shink and basis properties */
 @media (max-width: 800px) {
   .cta .container {
     text-align: center;
@@ -302,3 +383,4 @@ button {
     padding: 0 1em;
   }
 }
+/* End of Media Queries */
