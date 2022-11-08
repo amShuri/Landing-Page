@@ -219,16 +219,19 @@ button {
 
 .cta__title {
   font-size: 24px;
+  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.700);
 }
 
 .cta__paragraph {
-  color: #292929;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.600);
+  font-weight: bold;
   font-size: 18px;
-  font-weight: 300;
 }
 
 .cta__button {
   border: 1px solid rgba(0, 0, 0, 0.85);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.600);
   border-radius: 10px;
 }
 
@@ -352,15 +355,39 @@ button {
 /* This is not the best way to make media queries
 I've done these really quickly just for practicing
 flexbox's shink and basis properties */
+@media (max-width: 580px) {
+  .header {
+    height: 75px;
+  }
+  .header .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header__logo {
+    margin: 0;
+  }
+
+  .header__link {
+    margin: 0 1em;
+  }
+
+  .quote {
+    padding: 1em 0;
+  }
+
+  .cta__box {
+    flex-direction: column;
+  }
+
+}
 @media (max-width: 800px) {
   .cta .container {
     text-align: center;
     justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .cta__box {
-    margin: 0 1em;
   }
 }
 
