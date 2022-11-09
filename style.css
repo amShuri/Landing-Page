@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap");
+
 html {
   scroll-behavior: smooth;
   box-sizing: border-box;
@@ -171,6 +172,7 @@ button {
   display: flex;
   align-items: center;
   min-height: 60vh;
+  max-width: 770px;
 }
 
 .quote__paragraph {
@@ -187,10 +189,6 @@ button {
   font-style: normal;
   font-weight: bold;
   justify-content: flex-end;
-}
-
-.quote .container {
-  max-width: 770px;
 }
 /* End of Quote section */
 
@@ -257,13 +255,13 @@ button {
     color: rgb(255, 184, 117);
   }
   25% {
+    color: rgb(255, 189, 65);
+  }
+  50% {
     color: rgb(223, 87, 9);
   }
   100% {
     color: rgba(255, 177, 113, 0.897);
-  }
-  50% {
-    color: rgb(255, 189, 65);
   }
 }
 
@@ -272,6 +270,7 @@ button {
   animation-duration: 8s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
+  color: rgb(255, 184, 117);
 }
 /* End of Hero FREE text's animation */
 
@@ -297,14 +296,11 @@ button {
 .hero__gift {
   animation-name: heroGift;
   animation-duration: 2s;
-  animation-iteration-count: 5;
+  animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   animation-fill-mode: backwards;
-}
-
-.hero__gift {
-  color: rgb(255, 189, 65);
   transform: scale(90%);
+  color: rgb(255, 189, 65);
 }
 /* End of Hero's gift icon */
 
@@ -359,9 +355,9 @@ flexbox's shink and basis properties */
   .header {
     height: 75px;
   }
+
   .header .container {
     width: 100%;
-    display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
